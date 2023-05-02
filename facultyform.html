@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Meeting Form</title>
+    <title>Faculty Form</title>
     </head>
   <body>
-    <style>
+  <style>
       body {
     font-family: Arial, sans-serif;
     height: 200%;
@@ -108,31 +108,62 @@
         <button onclick="toggleForm('delete')">Delete</button>
       </div>
       <div class="form-container" id="form-container">
-        <h2 class="form-header" id="form-header">Meeting Form</h2>
+        <h2 class="form-header" id="form-header">Faculty Form</h2>
         <form>
           <div>
-            <label for="meetingID">Meeting ID:</label>
-            <input type="number" id="meetingID" name="meetingID" readonly>
+            <label for="SamID">SamID:</label>
+            <input type="text" id="SamID" name="SamID" required>
           </div>
           <div>
-            <label for="meetingName">Meeting Name:</label>
-            <input type="text" id="meetingName" name="meetingName" required>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
           </div>
           <div>
-            <label for="meetingDate">Meeting Date:</label>
-            <input type="date" id="meetingDate" name="meetingDate" required>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
           </div>
           <div>
-            <label for="meetingDesc">Meeting Description:</label>
-            <input type="text" id="meetingDesc" name="meetingDesc">
+            <label for="collegeOf">College of:</label>
+            <select id="collegeOf" name="collegeOf" required>
+              <option value="" disabled selected>Select College</option>
+              <option value="Arts and Media">College of Arts and Media</option>
+              <option value="Business Administration">College of Business Administration</option>
+              <option value="Criminal Justice">College of Criminal Justice</option>
+              <option value="Education">College of Education</option>
+              <option value="Health Science">College of Health Science</option>
+              <option value="Humanities and Social Studies">College of Humanities and Social Studies</option>
+              <option value="Osteopathic Medicine">College of Osteopathic Medicine</option>
+              <option value="Science & Engineering Technology">College of Science & Engineering Technology</option>
+            </select>
           </div>
           <div>
-            <label for="meetingLoc">Meeting Location:</label>
-            <input type="text" id="meetingLoc" name="meetingLoc">
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
           </div>
-          <button type="submit
-
-
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="office">Office:</label>
+            <input type="text" id="office" name="office" required>
+          </div>
+          <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div>
+            <label for="facultyType">Faculty Type:</label>
+            <input type="text" id="facultyType" name="facultyType" required>
+          </div>
+          <div>
+            <label for="hireDate">Hire Date:</label>
+            <input type="date" id="hireDate" name="hireDate" required>
+          </div>
+          <div>
+            <label for="mailboxNo">Mailbox No:</label>
+            <input type="text" id="mailboxNo" name="mailboxNo" required>
+          </div>
           <button type="submit">Submit</button>
         </form>
       </div>
@@ -140,10 +171,10 @@
     <script>
       function toggleForm(action) {
         var formContainer = document.getElementById("form-container");
-        if (formContainer.style.display === "block") {
+       if (formContainer.style.display === "block") {
           formContainer.style.display = "none";
         } else {
-          document.getElementById("form-header").innerHTML = action.toUpperCase() + " Faculty ";
+          document.getElementById("form-header").innerHTML = action.toUpperCase() + " Meeting";
           formContainer.style.display = "block";
         }
       }
