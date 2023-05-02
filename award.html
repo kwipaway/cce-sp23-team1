@@ -1,1 +1,80 @@
-Award
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Award Page</title>
+    <link rel="stylesheet" href="styles/Award.css">
+    <style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		label {
+			margin-bottom: 10px;
+		}
+		select, input[type="text"] {
+			margin-bottom: 20px;
+			width: 100%;
+			max-width: 400px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			font-size: 16px;
+		}
+		input[type="submit"] {
+			margin-top: 20px;
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+    <img src="images/SHSH.jpg" alt="SHSU logo" width="120px" height="120px">
+	<h1>Awards</h1>
+
+	<!-- Award form -->
+	<form action="" method="POST">
+		<label for="AwardID">Award ID:</label>
+		<select name="AwardID">
+			<option value="">--Select--</option>
+			<option value="1">Award 1</option>
+			<option value="2">Award 2</option>
+			<option value="3">Award 3</option>
+		</select>
+
+		<label for="AwardTitle">Award Title:</label>
+		<select name="AwardTitle">
+			<option value="">--Select--</option>
+			<option value="Title 1">Title 1</option>
+			<option value="Title 2">Title 2</option>
+			<option value="Title 3">Title 3</option>
+		</select>
+
+		<label for="AwardOrganization">Award Organization:</label>
+		<select name="AwardOrganization">
+			<option value="">--Select--</option>
+			<option value="Org 1">Org 1</option>
+			<option value="Org 2">Org 2</option>
+			<option value="Org 3">Org 3</option>
+		</select>
+
+		<label for="AwardDescription">Award Description:</label>
+		<input type="text" name="AwardDescription" value="" maxlength="200" />
+
+        <div class="buttons">
+            <button type="submit" id="create-btn">Create</button>
+            <button type="submit" id="search-btn">Search</button>
+            <button type="submit" id="update-btn">Update</button>
+            <button type="submit" id="delete-btn">Delete</button>
+        </div>
+		
+	</form>
+
+</body>
+</html>
