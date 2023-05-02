@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactions</title>
+    <link rel="stylesheet" href="styles/interactions.css">
+</head>
+
+<body>
+    <img class="cce" src="images/shsu CCE.png" alt="SHSU CCE LOGO" height="120px" width="120px">
+    <img class="logo" src="images/SHSU_block_logo.svg.png" alt="SHSU Logo" height="120px" width="120px">
+    <h1>Interactions</h1>
+    <form>
+        <label for="sam-id">Sam ID:</label>
+        <input type="text" id="sam-id" name="sam-id"><br><br>
+
+        <label for="interaction-id">Interaction ID:</label>
+        <input type="text" id="interaction-id" name="interaction-id"><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="description">Description:</label>
+
+        <textarea name="description" id="description" rows="10"></textarea>
+
+        <label for="interaction-type">Interaction Type:</label>
+        <select id="interaction-type" name="interaction-type">
+            <option value="email">Email</option>
+            <option value="face-to-face">Face to Face</option>
+            <option value="zoom">Zoom</option>
+        </select><br><br>
+
+        <div class="buttons">
+            <button type="submit" id="create-btn">Create</button>
+            <button type="submit" id="search-btn">Search</button>
+            <button type="submit" id="update-btn">Update</button>
+            <button type="submit" id="delete-btn">Delete</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
