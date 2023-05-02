@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Events.github.io</title>
-	<link rel="stylesheet" href="stles/events.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Events</title>
+	<link rel="stylesheet" href="styles/events.css">
 </head>
 <body>
-	<h1>Upcoming Events</h1>
-	<ul>
-		<li>Meeting with clients - May 1, 2023</li>
-		<li>Team building event - May 15, 2023</li>
-		<li>Product launch - June 1, 2023</li>
-		<li>Conference - July 15-17, 2023</li>
-	</ul>
+	<form>
+		<label for="event-name">Event Name:</label>
+		<input type="text" id="event-name" name="event-name"><br><br>
+		<label for="event-date">Event Date:</label>
+		<input type="date" id="event-date" name="event-date"><br><br>
+		<label for="event-description">Event Description:</label><br>
+		<textarea id="event-description" name="event-description" rows="4" cols="50"></textarea><br><br>
+        <label for="attendees">Attendees:</label><br>
+		<input type="text" id="attendees" name="attendees" placeholder="Enter comma-separated names"><br><br>
+		<button type="submit">Add Event</button>
+	</form>
 </body>
+</html>
 </html>
