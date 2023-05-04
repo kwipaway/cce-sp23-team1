@@ -1,0 +1,151 @@
+body { 
+  font-family: Arial, sans-serif;
+  height: 100%;
+  background-color: rgb(59,59,196);
+}
+form{
+  height: 75%; /* set the form height to 75% of the page*/
+  background-color: white; /* set the background color of the form to white */
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+  font-size: 4em;
+  font-family: serif;
+}
+.image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+img {
+  max-width: 10%;
+  max-height: 10%;
+  position: center;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 5px solid darkorange;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.button-1 {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  height: 50px;
+}
+.button-2 {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.button-3 {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.button-4 {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.button-5 {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.button-6 {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.button-7 {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.button-8 {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.button-9 {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+.button:hover {
+  background-color: #2980b9;
+}
