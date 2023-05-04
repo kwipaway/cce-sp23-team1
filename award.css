@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-color: rgb(59,59,196);
+}
+form{
+    height: 75%; /* set the form height to 75% of the page*/
+    background-color: white; /* set the background color of the form to white */
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    font-size: 4em;
+    font-family: serif;
+}
+
+img {
+    transform: rotate(10deg);
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 5px solid darkorange;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.buttons {
+display: flex;
+justify-content: space-between;
+}
+
+button {
+    background-color: darkorange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3ebe41;
+}
