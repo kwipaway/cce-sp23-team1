@@ -51,7 +51,7 @@ label {
   justify-content: center;
 }
 
-.button-1 {
+button {
   display: block;
   text-align: center;
   padding: 10px;
@@ -64,87 +64,6 @@ label {
   width: 100px;
   height: 50px;
 }
-.button-2 {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  background-color: #000000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.button-3 {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  background-color: #000000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.button-4 {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  background-color: #000000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.button-5 {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  background-color: #000000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.button-6 {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  background-color: #000000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.button-7 {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  background-color: #000000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.button-8 {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  background-color: #000000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.button-9 {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  background-color: #000000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
 
 .button:hover {
   background-color: #eff7fd;
