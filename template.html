@@ -3,39 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Template</title>
-    <link rel="stylesheet" href="template.css">
+    <title>Interactive University Template</title>
+    <link rel="stylesheet" href="interactive.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
+    <!-- Navbar -->
+    <nav class="navbar">
         <div class="logo">
             <!-- University Logo -->
             <img src="images/logo.png" alt="University Logo">
         </div>
-        <nav>
-            <!-- Navigation Menu -->
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">Admissions</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Programs</a>
+                <div class="dropdown-content">
+                    <a href="#">Undergraduate</a>
+                    <a href="#">Graduate</a>
+                    <a href="#">Online Courses</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Admissions</a>
+            </li>
+            <li class="nav-item">
+                <a href="#modal" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero fade-in">
         <div class="hero-content">
             <h1>Welcome to [University Name]</h1>
             <p>Empowering minds, shaping futures.</p>
-            <a href="#" class="btn">Learn More</a>
+            <a href="#" class="btn btn-primary">Learn More</a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about slide-in">
         <h2>About Us</h2>
         <p>
             <!-- Brief description about the university -->
@@ -44,39 +56,89 @@
     </section>
 
     <!-- Programs Section -->
-    <section class="programs">
+    <section class="programs" id="features">
         <h2>Our Programs</h2>
-        <div class="program-grid">
-            <!-- Program 1 -->
-            <div class="program-card">
-                <h3>Program 1</h3>
-                <p>Description of Program 1.</p>
+
+        <!-- Accordion -->
+        <div class="accordion">
+            <div class="accordion-item" id="program1">
+                <div class="accordion-header">
+                    <h3>Program 1</h3>
+                </div>
+                <div class="accordion-content">
+                    <p>Description of Program 1.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
             </div>
-            <!-- Program 2 -->
-            <div class="program-card">
-                <h3>Program 2</h3>
-                <p>Description of Program 2.</p>
+
+            <div class="accordion-item" id="program2">
+                <div class="accordion-header">
+                    <h3>Program 2</h3>
+                </div>
+                <div class="accordion-content">
+                    <p>Description of Program 2.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
             </div>
-            <!-- Program 3 -->
-            <div class="program-card">
-                <h3>Program 3</h3>
-                <p>Description of Program 3.</p>
+
+            <div class="accordion-item" id="program3">
+                <div class="accordion-header">
+                    <h3>Program 3</h3>
+                </div>
+                <div class="accordion-content">
+                    <p>Description of Program 3.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <ul class="tab-list">
+                <li class="tab-item" id="tab1">
+                    <a href="#tab1" class="tab-link">Undergraduate</a>
+                </li>
+                <li class="tab-item" id="tab2">
+                    <a href="#tab2" class="tab-link">Graduate</a>
+                </li>
+                <li class="tab-item" id="tab3">
+                    <a href="#tab3" class="tab-link">Online</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <h3>Undergraduate Programs</h3>
+                <p>This content appears when Undergraduate tab is active.</p>
+                <div class="tooltip">
+                    <span>Hover over me for a tooltip!</span>
+                    <span class="tooltiptext">Explore our undergraduate programs.</span>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <h3>Graduate Programs</h3>
+                <p>This content appears when Graduate tab is active.</p>
+            </div>
+
+            <div class="tab-content">
+                <h3>Online Programs</h3>
+                <p>This content appears when Online tab is active.</p>
             </div>
         </div>
     </section>
 
     <!-- Admissions Section -->
-    <section class="admissions">
+    <section class="admissions slide-in">
         <h2>Admissions</h2>
         <p>
             <!-- Admissions information -->
             [Admissions details go here.]
         </p>
-        <a href="#" class="btn">Apply Now</a>
+        <a href="#" class="btn btn-primary">Apply Now</a>
     </section>
 
     <!-- News Section -->
-    <section class="news">
+    <section class="news slide-in">
         <h2>Latest News</h2>
         <div class="news-grid">
             <!-- News Article 1 -->
@@ -98,7 +160,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer>
+    <footer class="slide-in">
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Quick Links</h3>
